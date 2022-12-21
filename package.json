@@ -1,0 +1,11 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/superrnovae/js",
+  "author": "superrnovae",
+  "license": "MIT",
+  "dependencies": {
+    "scanf": "^1.1.2"
+  }
+}
