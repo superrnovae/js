@@ -22,16 +22,17 @@ console.log("");
 
 // Exo 2
 
-console.log('Saisir un entier');
-const entier = scanf("%d");
+let entier;
 
-if (entier === null) {
-    console.log("La valeur saisie est null");
+do {
+    console.log('Saisir un entier');
+    entier = scanf("%d");
 }
-else {
-    const sum = (entier * (entier+1)) / 2;
-    console.log(`La somme de nombre entre 1 et ${entier} === ${sum}`);
-}
+while (entier === null);
+
+const sum = (entier * (entier+1)) / 2;
+
+console.log(`La somme de nombre entre 1 et ${entier} === ${sum}`);
 
 console.log("");
 
@@ -39,8 +40,8 @@ console.log("");
 
 const arr = [];
 
-for(let i=0; i<5; i++) {
-    console.log(`Saisir entier numero ${i}`);
+for(let i=1; i<6; i++) {
+    console.log(`Saisir un entier numero ${i}`);
     arr.push(scanf("%d"));
 }
 
@@ -48,7 +49,7 @@ console.log(`L'index de plus grand element = ${indexOfMax(arr)}`);
 
 const average = arr.reduce((a, b) => a + b, 0) / arr.length;
 
-console.log(`La moyenne des entiers est ${average}`);
+console.log(`La moyenne des entiers = ${average}`);
 
 function indexOfMax(arr) {
     if (arr.length === 0) {
