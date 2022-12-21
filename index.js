@@ -40,8 +40,8 @@ console.log("");
 
 const arr = [];
 
-for(let i=1; i<6; i++) {
-    console.log(`Saisir un entier numero ${i}`);
+while(arr.length < 5) {
+    console.log(`Saisir un entier numero ${arr.length+1}`);
     arr.push(scanf("%d"));
 }
 
